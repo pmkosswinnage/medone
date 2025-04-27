@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use frontend\models\Patient;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Patientmedicalhistory */
@@ -12,7 +13,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'PatientID')->textInput() ?>
+    <!-- <?= $form->field($model, 'PatientID')->textInput() ?> -->
 
     <?= $form->field($model, 'DoctorID')->textInput() ?>
 

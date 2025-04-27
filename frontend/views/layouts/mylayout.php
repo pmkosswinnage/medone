@@ -30,7 +30,7 @@ DashboardAsset::register($this);
         <!-- Logo -->
         <a href="index2.html" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>F-</b>CC</span>
+          <span class="logo-mini"><b>MED-</b>ONE</span>
           <!-- logo for regular state and mobile devices -->
           <span class="logo-lg"><b>MED ONE </b>E-Channeling</span>
         </a>
@@ -71,10 +71,10 @@ DashboardAsset::register($this);
                             <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                           </div>
                           <h4>
-                            AdminLTE Design Team
+                            MED-One Design Team
                             <small><i class="fa fa-clock-o"></i> 2 hours</small>
                           </h4>
-                          <p>Why not buy a new awesome theme?</p>
+                          <p></p>
                         </a>
                       </li>
                       <li>
@@ -378,13 +378,13 @@ DashboardAsset::register($this);
             
             <li class="active treeview">
               <a href="#">
-              <i class="fa fa-dashboard"></i> <span>Dashboard-Admin</span> <i class="fa fa-angle-left pull-right"></i>
+              <i class="fa fa-dashboard"></i> <span>Doctor Portal</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
                 <li>
                         <?php 
-                        If ($roleid==1){    
-                        echo $url = Html::a('<i class="fa fa-circle-o"> </i> Admin Control Panel',
+                        If ($roleid==3){    
+                        echo $url = Html::a('<i class="fa fa-circle-o"> </i> Setup Availability',
                         ['/site/indexadmin'],
                         ['class' => 'admin-year-index']);
                         }
@@ -393,8 +393,8 @@ DashboardAsset::register($this);
                     
                      <li>
                         <?php 
-                        If ($roleid==1){ 
-                        echo $url = Html::a('<i class="fa fa-circle-o"> </i> Academic Year',
+                        If ($roleid==3){ 
+                        echo $url = Html::a('<i class="fa fa-circle-o"> </i> View Patient EHR',
                         ['/admin-year/index'],
                         ['class' => 'admin-year-index']);
                         }
@@ -428,150 +428,10 @@ DashboardAsset::register($this);
             
             
             
-             <li class="treeview">
-              <a href="#">
-              <i class="fa fa-dashboard"></i> <span>Dashboard-Student</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                      <li class="active">
-                        <?php 
-                        If ($roleid==1){ 
-                        echo $url = Html::a('<i class="fa fa-circle-o"> </i> Student Control panel',
-                        ['/site/indexstudent'],
-                        ['class' => 'admin-year-index']);
-                        
-                        } elseif ($roleid==2) {
-                            
-                        echo $url = Html::a('<i class="fa fa-circle-o"> </i> Student Control panel',
-                        ['/site/indexstudent'],
-                        ['class' => 'admin-year-index']);
-                            
-                        }
-                        ?>
-                      
-                    </li>   
-                     
-                    <li >
-                         <?php 
-                        If ($roleid==1){ 
-                            
-                            echo $url = Html::a('<i class="fa fa-circle-o"> </i> View Academic Modules ',
-                            ['/admin-module2/viewindex'],
-                            ['class' => 'admin-year-index']);
-                        }elseif ($roleid==2) {
-                            echo $url = Html::a('<i class="fa fa-circle-o"> </i> View Academic Modules ',
-                            ['/admin-module2/viewindex'],
-                            ['class' => 'admin-year-index']);
-                        
-                        }
-                        ?>
-                    </li>
-                  
-                    <li >
-                         <?php 
-                        If ($roleid==1){ 
-                                echo $url = Html::a('<i class="fa fa-circle-o"> </i> Feed-Back Forms',
-                                ['/feed-back-hed/index'],
-                                ['class' => 'admin-year-index']);    
-                         }elseif ($roleid==2) { 
-                                echo $url = Html::a('<i class="fa fa-circle-o"> </i> Feed-Back Forms',
-                                ['/feed-back-hed/index'],
-                                ['class' => 'admin-year-index']);
-                         }
-                        ?>
-                        
-                    </li>
-                    
-                     <li >
-                         <?php 
-                        If ($roleid==1){ 
-                            echo $url = Html::a('<i class="fa fa-circle-o"> </i> Action Plan',
-                            ['/stud-actionplan-hed/index'],
-                            ['class' => 'admin-year-index']);
-                            
-                        }elseif ($roleid==2) { 
-                            echo $url = Html::a('<i class="fa fa-circle-o"> </i> Action Plan',
-                            ['/stud-actionplan-hed/index'],
-                            ['class' => 'admin-year-index']);
-                        }
-                        ?>
-                        
-                    </li>
-                    
-                    
-                    <li >
-                            <?php 
-                        If ($roleid==1){ 
-                            echo $url = Html::a('<i class="fa fa-circle-o"> </i>SWOT Analysis',
-                            ['/site/sowtanalysis','studid'=>Yii::$app->user->identity->user_id],
-                            ['class' => 'admin-year-index']);
-                         }elseif ($roleid==2) { 
-                            echo $url = Html::a('<i class="fa fa-circle-o"> </i>SWOT Analysis',
-                            ['/site/sowtanalysis','studid'=>Yii::$app->user->identity->user_id],
-                            ['class' => 'admin-year-index']);
-                        }
-                        ?>
-                        
-                    </li>
-                    
-              </ul>
-            </li>
+             
                
             
-             <li class="treeview">
-              <a href="#">
-              <i class="fa fa-dashboard"></i> <span>Dashboard-Tutor</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                        <li class="active">
-                       <?php 
-                        If ($roleid==1){ 
-                        echo $url = Html::a('<i class="fa fa-circle-o"> </i> Tutor Control panel',
-                        ['/tutor/index'],
-                        ['class' => 'admin-year-index']);
-                        
-                        } elseif ($roleid==3) {
-                            
-                        echo $url = Html::a('<i class="fa fa-circle-o"> </i> Tutor Control panel',
-                        ['/tutor/index'],
-                        ['class' => 'admin-year-index']);
-                            
-                        }
-                        ?>
-                      </li>
-                      
-                     <li >
-                         <?php 
-                            If ($roleid==1){ 
-                            
-                                echo $url = Html::a('<i class="fa fa-circle-o"> </i> View Academic Modules ',
-                                ['/admin-module2/viewindex'],
-                                ['class' => 'admin-year-index']);
-                            }elseif ($roleid==3) {
-                                echo $url = Html::a('<i class="fa fa-circle-o"> </i> View Academic Modules ',
-                                ['/admin-module2/viewindex'],
-                                ['class' => 'admin-year-index']);
-
-                            }
-                            ?>
-                        </li>
-                    
-                     <li >
-                          <?php 
-                        If ($roleid==1){ 
-                            echo $url = Html::a('<i class="fa fa-circle-o"> </i>SWOT Analysis',
-                            ['/tutor/feedbacklist'],
-                            ['class' => 'admin-year-index']);
-                         }elseif ($roleid==3) { 
-                            echo $url = Html::a('<i class="fa fa-circle-o"> </i>SWOT Analysis',
-                            ['/tutor/feedbacklist'],
-                            ['class' => 'admin-year-index']);
-                        }
-                        ?>
-                     </li>     
-                    
-              </ul>
-            </li>
+             
                
                       
 <!--            <li class="treeview">

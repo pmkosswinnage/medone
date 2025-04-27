@@ -32,6 +32,7 @@ class DoctoravailabiltyController extends Controller
      */
     public function actionIndex()
     {
+        $this->layout='adminLayout'; 
         $searchModel = new DoctoravailabiltySerach();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 

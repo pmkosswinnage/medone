@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Feed-Cloud.com';
+$this->title = 'MED-ONE.com';
 
 ?>
 <div class="site-mycalander">
@@ -12,7 +12,7 @@ $this->title = 'Feed-Cloud.com';
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Calendar
+            Doctor Portal
             <small>Control panel</small>
           </h1>
           <ol class="breadcrumb">
@@ -28,16 +28,16 @@ $this->title = 'Feed-Cloud.com';
             <div class="col-md-3">
               <div class="box box-solid">
                 <div class="box-header with-border">
-                  <h4 class="box-title">Draggable Events</h4>
+                  <h4 class="box-title">Setup Availability</h4>
                 </div>
                 <div class="box-body">
                   <!-- the events -->
                   <div id="external-events">
-                    <div class="external-event bg-green">Lunch</div>
-                    <div class="external-event bg-yellow">Go home</div>
-                    <div class="external-event bg-aqua">Do homework</div>
-                    <div class="external-event bg-light-blue">Work on UI design</div>
-                    <div class="external-event bg-red">Sleep tight</div>
+                    <div class="external-event bg-green">Working Day</div>
+                    <div class="external-event bg-yellow">Off Day</div>
+                    <div class="external-event bg-aqua">Chronic Care Visits</div>
+                    <div class="external-event bg-light-blue">On-Call Shifts</div>
+                    <div class="external-event bg-red">Follow-up Appointments</div>
                     <div class="checkbox">
                       <label for="drop-remove">
                         <input type="checkbox" id="drop-remove">

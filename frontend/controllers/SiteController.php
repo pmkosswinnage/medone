@@ -173,7 +173,7 @@ class SiteController extends Controller
                 }
              else If ($roleid==3)
                 {
-                return $this->redirect(array('tutor/index'));
+                return $this->redirect(array('site/calender'));
                 }
             else {
                  return $this->goBack();   
@@ -257,7 +257,7 @@ class SiteController extends Controller
                 }
              else If ($passrole==3)
                 {
-                return $this->redirect(array('tutor/index'));
+                return $this->redirect(array('doctoravailabilty/index'));
                 }
             else {
                  return $this->goBack();   
