@@ -43,18 +43,9 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
     <div class="summary-section">
-        <h4>Patient Details</h4>
-        <p><strong>Name:</strong> Jane Smith</p>
-        <p><strong>Age:</strong> 30</p>
-        <p><strong>Gender:</strong> Female</p>
-        <p><strong>Contact Number:</strong> (123) 456-7890</p>
-        <p><strong>Email:</strong> jane.smith@example.com</p>
-    </div>
-
-    <div class="summary-section">
         <h4>Appointment Details</h4>
         <p><strong>Appointment Number:</strong> #123456</p>
-        <p><strong>Appointment Date:</strong> October 25, 2023</p>
+        <p><strong>Appointment Date:</strong> April 25, 2025</p>
         <p><strong>Appointment Time:</strong> 10:00 AM</p>
     </div>
 

@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Feed-Cloud.com';
+$this->title = 'MED-ONE.com';
 
 ?>
 <div class="site-index">
